@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    position: relative;
+    margin: 0 10px;
+    padding: 0;
+
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background: #008ed6;
+    height: 2px;
+    width: 0%;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background: #008ed6;
+    height: 2px;
+    width: 0%;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+    width: 48%;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 48%;
+}
+
+header h1{
+    color: #fff;
+    margin-bottom: 15px;
+}
+header h5{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+header p{
+    color:#999999;
+    margin-bottom: 50px;
+}
+.btn-download{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #008ed6;
+    padding: 0;
+    padding: 10px 20px;
+
+}
+.btn-features{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid #999;
+    padding: 0;
+    padding: 10px 20px;
+    margin-left: 15px;
+}
+.height{
+    min-height: 90vh;
+    align-items: center;
+    
+}
+.phone{
+    position: absolute;
+    bottom: 0;
+    left: 57%;
+
+}
+.product-overview{
+    padding-top: 70px;
+}
+.product-overview h6,
+.device-details h6,
+.customize-details h6,
+.testimonial h6,
+.pricing h6,
+.contact h6{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #008ed6;
+    font-weight: 600;
+    font-size: 16px;
+}
+.product-overview h2,
+.device-details h2,
+.customize-details h2,
+.pricing h2,
+.contact h2{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+.title-underline{
+    position: relative;
+    height: 3px;
+    width: 100px;
+    display: block;
+}
+.title-underline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    transition: 0.4s all ease-in-out;
+}
+.product-overview:hover .title-underline::after,
+.device-details:hover .title-underline::after,
+.customize-details:hover .title-underline::after,
+.testimonial:hover .title-underline::after,
+.pricing:hover .title-underline::after,
+.contact:hover .title-underline::after{
+    width: 48%;
+}
+.title-underline::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    transition: 0.4s all ease-in-out;
+}
+.product-overview:hover .title-underline::before,
+.device-details:hover .title-underline::before,
+.customize-details:hover .title-underline::before,
+.testimonial:hover .title-underline::before,
+.pricing:hover .title-underline::before,
+.contact:hover .title-underline::before{
+    width: 48%;
+}
+.feature-icon-circle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+}
+.feature-icon-circle i{
+    color: #008ed6;
+    font-size: 25px;
+}
+.product-overview h3{
+    color: #1a1a1a;
+    margin: 20px 0 10px 0;
+}
+.product-overview p{
+    color: #999;
+}
+.devider{
+    display: block;
+    background-color: #ededed;
+    height: 1px;
+    width: 100%;
+}
+.device-details{
+    padding: 60px 0;
+}
+.device-details p,
+.customize-details p{
+    color: #999;
+    margin-top: 20px;
+}
+.device-details ul{
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+}
+.device-details ul li{
+    margin-top: 10px;
+}
+.device-details ul li i{
+    height: 25px;
+    width: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #008ed6;
+    margin-right: 3px;
+}
+.device-details ul li span{
+    color: #1a1a1a;
+}
+.customize-details{
+    background-color: #f2f2f2;
+}
+.testimonial{
+    background-image: url("../images/testimonial_bg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+}
+.testimonial h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+.client-img{
+    margin-right: 20px;
+}
+.client-details p{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+}
+.client-details h5{
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-dots .owl-dot span{
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    margin-right: 10px;
+    margin-top: 120px;
+    transition: 0.4s all ease-in-out;
+}
+.owl-dots .active span{
+    height: 15px;
+    width: 15px;
+    background: #fff;
+}
+.theme{
+    background: #15141a;
+}
+.theme h4{
+    color: #fff;
+    font-weight: 300;
+}
+.theme h4 span{
+    font-weight: 600;
+}
+.feature-btn{
+    color: #fff!important;
+    text-transform: uppercase;
+    border: 1px solid #999999;
+    padding: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+
+} 
+.download-btn{
+    color: #fff!important;
+    text-transform: uppercase;
+    background: #008ed6;
+    padding: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.price-tables{
+
+
+}
+
+.price-tables h5{
+    color: #008ed6;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.price-tables h1{
+    color: #1a1a1a;
+    font-size: 30px;  
+    margin-bottom: 20px;
+}
+    
+.price-tables span{
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: auto;
+    position: relative;
+    
+        
+}
+.price-tables span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 0%;
+    background: #008ed6;
+    transition: .4s ease-in-out;
+    
+}
+    
+.price-tables span::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0%;
+    width: 0%;
+    background: #008ed6;
+    transition: .4s ease-in-out;
+    
+}
+.price-tables:hover span::before{
+    width: 48%;
+    height: 100%;
+    
+}
+    
+.price-tables:hover span::after{
+    
+    width: 48%;
+    height: 100%;
+        
+}
+.price-tables h4{
+
+    color: #1a1a1a;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 20px 0;
+}
+.price-tables h2{
+    color: #1a1a1a;     
+    font-size: 40px;    
+    padding: 0;
+}
+    
+.price-tables sup{font-size: 24px;} 
+
+.price-tables p{       
+    color: #999999;      
+    font-size: 16px;    
+    width: 230px;    
+    margin: auto;
+}
+            
+.box{
+    padding: 26px 0;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: -8px;
+}
+                
+.box-2{
+    padding: 26px 0;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: -47px;
+}
+
+.btn-oder{
+    color: #008ed6;
+    margin-top: 15px;
+}
+                    
+.new-color{                
+    color: #008ed6!important;
+                    
+}
+                    
+.blue{            
+    background: #008ed6;
+                    
+}
+.btn-color{
+    background: #008ed6;              
+    color: #fff;
+}
+
+.contact-us{
+    padding-top: 60px;
+
+}
+
+.contact-us h5{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.contact-us h1{
+    font-size: 30px;   
+    margin-bottom: 20px;
+}
+    
+.contact-us span{
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: auto;
+    position: relative;    
+}
+
+.contact-us span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    background: #008ed6;
+    transition: .4s ease-in-out;
+
+    
+}
+
+.contact-us span::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0%;
+    width: 0%;
+    background: #008ed6;
+    transition: .4s ease-in-out;
+    
+}
+.contact-us:hover span::before{
+    width: 48%;
+    height: 100%;
+    
+
+}
+
+.contact-us:hover span::after{
+    width: 48%;
+    height: 100%;
+    
+}
+.contact-us i {
+    font-size: 25px;
+    color: #008ed6;
+    margin-bottom: 22px;
+}
+    
+.contact-us h6{  
+    color: #999999;  
+    margin-bottom: 6px;   
+    font-size: 15px;
+}
+
+
+.contact-us p {
+    color: #999999;  
+    font-size: 14px;
+}
+.price-tables h4:hover{
+    color: #008ed6;
+
+}
+.box:hover{
+    background: #008ed6;
+}
+
+.price-tables h2,p:hover{
+    color: #fff;
+}
+
+
+.btn-oder:hover{
+    background: #008ed6;
+    color: #fff;
+
+}
+
+.no-color:hover{
+    color: #999999;
+
+    
+}
+
+
+.footer-section{
+    padding: 25px 0;
+    background: #15141a;
+}
+        
+        
+.footer-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;    
+    align-items: center;    
+    margin-bottom: 27px;    
+    margin-top: 20px;
+}
+.footer-section ul li{
+    margin-left: 40px;
+}
+    
+.footer-section ul li i{
+    font-size: 23px;
+    color: #444348;
+}
+    
+.footer-section p{
+    color: #444348;     
+    margin-left: 45px;    
+    font-size: 16px;    
+    letter-spacing: 1px;
+}
+
+.price-tables h2, p:hover { 
+    color: #999999;
+        
+}
+
+
+.footer-section ul li i:hover{
+    color: #008ed6;            
+}
+        
+.no-color:hover {   
+    color: #999999!important;
+                
+}
+        
+.price-tables h2, sup, .whi-color:hover{
+    color: #fff;
+        
+}
+        
+.area:focus{  
+    outline: none;
+}        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
